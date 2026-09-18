@@ -6,6 +6,8 @@ It scans your configs, groups skills into packs (parent + children), and shows h
 
 Organizer is also **agent-facing**: it ships its own skill (`organizer-catalog`) so an AI can configure and operate the catalog, and its own MCP server so the agent can list, inspect, classify, and refresh items without opening the UI.
 
+![Organizer catalog UI](docs/catalog.png)
+
 ## Why this exists
 
 Skills and MCP servers do not live in one place. Each client has its own folders and config files (`~/.agents/skills`, `~/.grok`, `~/.cursor`, Hermes, OpenCode, …). After a few installs you have hundreds of tools and no map.
