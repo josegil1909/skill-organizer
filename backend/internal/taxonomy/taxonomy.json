@@ -1,0 +1,388 @@
+{
+  "rules": [
+    {
+      "category": "Bug Bounty & Security",
+      "subCategory": "Web Vulnerabilities",
+      "patterns": [
+        "hunt-*",
+        "xss",
+        "sqli",
+        "idor",
+        "ssrf",
+        "csrf",
+        "rce",
+        "sql-injection",
+        "graphql-injection",
+        "auth-bypass",
+        "jwt-*",
+        "open-redirect",
+        "path-traversal",
+        "file-upload",
+        "deserialization"
+      ]
+    },
+    {
+      "category": "Bug Bounty & Security",
+      "subCategory": "Recon & OSINT",
+      "patterns": [
+        "bb-*",
+        "recon-*",
+        "offensive-osint",
+        "osint-*",
+        "subdomain",
+        "subfinder*",
+        "amass*",
+        "shodan*",
+        "censys*",
+        "bug-bounty*",
+        "asset-discovery",
+        "port-scan*",
+        "supply-chain*"
+      ]
+    },
+    {
+      "category": "Bug Bounty & Security",
+      "subCategory": "Red Team & Exploits",
+      "patterns": [
+        "redteam-*",
+        "red-teaming*",
+        "jailbreak*",
+        "apk-redteam-*",
+        "ios-redteam-*",
+        "vmware-*",
+        "m365-*",
+        "okta-*",
+        "cloud-iam-*",
+        "enterprise-vpn-*",
+        "cve-*",
+        "exploit*",
+        "privesc*",
+        "persistence*",
+        "c2-*"
+      ]
+    },
+    {
+      "category": "Bug Bounty & Security",
+      "subCategory": "Audit & Compliance",
+      "patterns": [
+        "security-*",
+        "*-audit",
+        "bugcrowd-*",
+        "triage-*",
+        "evidence-hygiene",
+        "report-writing",
+        "audit-*",
+        "compliance-*",
+        "pentest-*",
+        "vulnerability-report*"
+      ]
+    },
+    {
+      "category": "Gentle AI & SDD",
+      "subCategory": "Spec-Driven Development",
+      "patterns": [
+        "sdd-*",
+        "spec-*",
+        "openspec*",
+        "_shared"
+      ]
+    },
+    {
+      "category": "Gentle AI & SDD",
+      "subCategory": "Review & Benchmark",
+      "patterns": [
+        "gentle-ai-*",
+        "rdd-*",
+        "judgment-day",
+        "benchmark-*"
+      ]
+    },
+    {
+      "category": "Frontend & UI/UX",
+      "subCategory": "Aesthetics & Taste",
+      "patterns": [
+        "taste-*",
+        "minimalist-*",
+        "brutalist-*",
+        "gpt-tasteskill",
+        "gpt-taste*",
+        "soft-skill",
+        "*taste*",
+        "typography*",
+        "color-palette*"
+      ]
+    },
+    {
+      "category": "Frontend & UI/UX",
+      "subCategory": "Design Systems & Tokens",
+      "patterns": [
+        "stitch*",
+        "brandkit",
+        "afy-design-system",
+        "shadcn*",
+        "design-system*",
+        "design-tokens*"
+      ]
+    },
+    {
+      "category": "Frontend & UI/UX",
+      "subCategory": "UI Architecture & Layout",
+      "patterns": [
+        "frontend-*",
+        "frontend",
+        "redesign-*",
+        "impeccable",
+        "cognitive-doc-*",
+        "polish-*",
+        "micro-interactions*"
+      ]
+    },
+    {
+      "category": "Frontend & UI/UX",
+      "subCategory": "Vue & Framework Patterns",
+      "patterns": [
+        "vue*",
+        "pinia*",
+        "nuxt*"
+      ]
+    },
+    {
+      "category": "Frontend & UI/UX",
+      "subCategory": "Bundlers & Tooling",
+      "patterns": [
+        "vite*",
+        "bun",
+        "webpack*",
+        "turbopack*"
+      ]
+    },
+    {
+      "category": "Frontend & UI/UX",
+      "subCategory": "Web Standards & Testing",
+      "patterns": [
+        "modern-web-*",
+        "playwright*",
+        "vitest*",
+        "chrome-devtools*",
+        "a11y-*",
+        "accessibility*",
+        "lighthouse*",
+        "jest*"
+      ]
+    },
+    {
+      "category": "Frontend & UI/UX",
+      "subCategory": "Visual AI & Image-to-Code",
+      "patterns": [
+        "imagegen-*",
+        "image-to-code-*",
+        "baoyu-*",
+        "screenshot-to-code*"
+      ]
+    },
+    {
+      "category": "Frontend & UI/UX",
+      "subCategory": "Game Assets & Generative Art",
+      "patterns": [
+        "game-*"
+      ]
+    },
+    {
+      "category": "Workflow & Engineering",
+      "subCategory": "Git & PR Automation",
+      "patterns": [
+        "*-pr",
+        "work-unit-commits",
+        "issue-creation",
+        "git-*",
+        "github-pr*"
+      ]
+    },
+    {
+      "category": "Workflow & Engineering",
+      "subCategory": "Code Quality & Testing",
+      "patterns": [
+        "code-search-ast",
+        "comment-writer",
+        "golang-*",
+        "go-testing*",
+        "typescript-*",
+        "types-*",
+        "solid",
+        "clean-architecture*",
+        "refactor*",
+        "linter*",
+        "code-review*"
+      ]
+    },
+    {
+      "category": "Workflow & Engineering",
+      "subCategory": "Architecture & Execution",
+      "patterns": [
+        "execute-plan*",
+        "design",
+        "implement",
+        "implementation-*",
+        "create-workflow*",
+        "workflow-*"
+      ]
+    },
+    {
+      "category": "Workflow & Engineering",
+      "subCategory": "Issue & Project Tracking",
+      "patterns": [
+        "kanban*",
+        "linear*",
+        "systemic-issue*",
+        "issue-triage*"
+      ]
+    },
+    {
+      "category": "Workflow & Engineering",
+      "subCategory": "Systems & Deployment",
+      "patterns": [
+        "devops*",
+        "tauri*",
+        "k8s*",
+        "terraform*"
+      ]
+    },
+    {
+      "category": "Workflow & Engineering",
+      "subCategory": "Research & Content Ideation",
+      "patterns": [
+        "research*",
+        "ideation*",
+        "creative*",
+        "seo*",
+        "copywriting*"
+      ]
+    },
+    {
+      "category": "AI Core & Meta",
+      "subCategory": "Code Graph & AST Indexing",
+      "patterns": [
+        "codegraph*",
+        "codegraphcontext*"
+      ]
+    },
+    {
+      "category": "AI Core & Meta",
+      "subCategory": "Documentation & Knowledge Index",
+      "patterns": [
+        "context7*"
+      ]
+    },
+    {
+      "category": "AI Core & Meta",
+      "subCategory": "Memory & Persistence",
+      "patterns": [
+        "engram*"
+      ]
+    },
+    {
+      "category": "AI Core & Meta",
+      "subCategory": "Skill Management",
+      "patterns": [
+        "skill-creator*",
+        "skill-improver*",
+        "find-skills*",
+        "skill-registry*",
+        "create-skill*",
+        "skill-design*",
+        "organizer-*"
+      ]
+    },
+    {
+      "category": "AI Core & Meta",
+      "subCategory": "Agent Frameworks & Multi-Agent",
+      "patterns": [
+        "autonomous-ai-*",
+        "build-with-ai*",
+        "agent-*",
+        "prompt-*",
+        "multi-agent*",
+        "agentic-*"
+      ]
+    },
+    {
+      "category": "AI Core & Meta",
+      "subCategory": "LLM Pipelines & Ops",
+      "patterns": [
+        "dspy*",
+        "mlops*",
+        "data-science*"
+      ]
+    },
+    {
+      "category": "AI Core & Meta",
+      "subCategory": "Session & Runtime Controls",
+      "patterns": [
+        "resume-*",
+        "statusline*",
+        "learn",
+        "long-running-*",
+        "full-output-*",
+        "webhook-*",
+        "native-mcp*"
+      ]
+    },
+    {
+      "category": "Cloud & Integrations",
+      "subCategory": "Documents & Office Automation",
+      "patterns": [
+        "pdf*",
+        "pptx*",
+        "docx*",
+        "office-*",
+        "excel*",
+        "word*"
+      ]
+    },
+    {
+      "category": "Cloud & Integrations",
+      "subCategory": "Productivity & Services",
+      "patterns": [
+        "apple*",
+        "airtable*",
+        "arxiv*",
+        "trello*",
+        "slack*",
+        "obsidian*",
+        "notion*",
+        "render*",
+        "davinci-resolve*",
+        "google-*"
+      ]
+    },
+    {
+      "category": "Cloud & Integrations",
+      "subCategory": "Personal Automation & Media",
+      "patterns": [
+        "email*",
+        "smart-home*",
+        "social-media*",
+        "spotify*",
+        "media*",
+        "pokemon*",
+        "minecraft*",
+        "home-assistant*"
+      ]
+    },
+    {
+      "category": "Cloud & Integrations",
+      "subCategory": "Developer Tools & Infra",
+      "patterns": [
+        "postgres*",
+        "sqlite*",
+        "mysql*",
+        "docker*",
+        "github*",
+        "gitlab*",
+        "brave-search*",
+        "fetch*",
+        "filesystem*"
+      ]
+    }
+  ]
+}

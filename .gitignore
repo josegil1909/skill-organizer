@@ -1,0 +1,27 @@
+# Binaries
+bin/
+dist/
+*.exe
+*.out
+
+# Go
+backend/bin/
+backend/tmp/
+
+# Node / Bun
+node_modules/
+.astro/
+frontend/dist/
+frontend/node_modules/
+frontend/.astro/
+
+# Environment / OS
+.DS_Store
+*.local
+.env
+.playwright-cli/
+
+# Local agent / index caches (never publish)
+.codegraph/
+.atl/
+.cursor/

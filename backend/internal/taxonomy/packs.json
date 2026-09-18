@@ -1,0 +1,34 @@
+{
+  "aliases": [
+    {
+      "family": "bug-bounty",
+      "parent": "bug-bounty",
+      "patterns": [
+        "bug-bounty",
+        "hunt-*",
+        "bb-*",
+        "apk-redteam-*",
+        "ios-redteam-*",
+        "redteam-*",
+        "triage-validation",
+        "report-writing",
+        "bugcrowd-reporting",
+        "evidence-hygiene",
+        "security-arsenal",
+        "web2-recon",
+        "offensive-osint",
+        "osint-methodology",
+        "recon-scope-triage",
+        "cloud-iam-*",
+        "enterprise-vpn-*",
+        "m365-*",
+        "okta-*",
+        "vmware-*",
+        "supply-chain-*",
+        "mid-engagement-*",
+        "meme-coin-audit",
+        "web3-audit"
+      ]
+    }
+  ]
+}
