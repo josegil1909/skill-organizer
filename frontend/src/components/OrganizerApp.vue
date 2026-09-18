@@ -1511,7 +1511,7 @@ onUnmounted(() => {
                 "
               >
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-400" aria-hidden="true" />
-                Clasificados ({{ classifiedCount }})
+                Classified ({{ classifiedCount }})
               </button>
               <button
                 type="button"
@@ -1528,7 +1528,7 @@ onUnmounted(() => {
                   :class="unclassifiedCount > 0 ? 'bg-amber-400 animate-pulse' : 'bg-zinc-500'"
                   aria-hidden="true"
                 />
-                Sin clasificar ({{ unclassifiedCount }})
+                Unclassified ({{ unclassifiedCount }})
               </button>
             </div>
 
@@ -1706,7 +1706,7 @@ onUnmounted(() => {
                 :class="isDeduplicated ? 'bg-cyan-400 animate-pulse' : 'bg-[#656c7d]'"
                 aria-hidden="true"
               />
-              <span>{{ isDeduplicated ? 'Deduplicado (ON)' : 'Todas las instancias' }}</span>
+              <span>{{ isDeduplicated ? 'Deduplicated (ON)' : 'All instances' }}</span>
             </button>
 
             <!-- Clear filters button if any filter is active -->
