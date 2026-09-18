@@ -4,13 +4,15 @@ A local catalog of **Skills** and **MCP** servers across the AI clients on your 
 
 It scans your configs, groups skills into packs (parent + children), and shows how to invoke each tool. Secrets are never stored: only environment variable **keys**.
 
+Organizer is also **agent-facing**: it ships its own skill (`organizer-catalog`) so an AI can configure and operate the catalog, and its own MCP server so the agent can list, inspect, classify, and refresh items without opening the UI.
+
 ## Quick path
 
 1. Install [Go 1.27+](https://go.dev/dl/) and [Bun](https://bun.sh) (Node 22.12+ also works for the frontend).
 2. Clone this repo and install frontend deps:
 
    ```bash
-   git clone https://github.com/<you>/organizer.git
+   git clone https://github.com/josegil1909/skill-organizer.git
    cd organizer
    make install
    ```
@@ -29,8 +31,20 @@ It scans your configs, groups skills into packs (parent + children), and shows h
 |---------|----------------|
 | Catalog UI | Search, filter by client / category / pack, inspect invocation |
 | Packs | Groups a skills.sh repo, a nested folder (Hermes `skills/erp/…`), or aliases like `bug-bounty` → `hunt-*` |
+| Agent skill | `organizer-catalog` tells an AI how to wire MCP, triage unclassified tools, and add taxonomy rules |
+| MCP stdio | First-party server: list, inspect, classify, stats, refresh |
 | REST API | `GET /api/items`, `/api/stats`, `POST /api/refresh` |
-| MCP stdio | Agents can list, inspect, and reclassify the same catalog |
+
+## Agent skill
+
+The repo includes [`.agents/skills/organizer/SKILL.md`](.agents/skills/organizer/SKILL.md) (`name: organizer-catalog`). Copy or symlink that folder into the client's skills directory (for example `~/.agents/skills/organizer` or `.grok/skills/organizer`). Once loaded, an agent can:
+
+- Connect Organizer as an MCP server
+- Browse the catalog and explain how to invoke a skill or MCP
+- Find unclassified items and add taxonomy rules
+- Trigger a rescan after you install new tools
+
+You do not need the UI open for that path. The skill is the playbook; the MCP is the API the agent calls.
 
 ## MCP server
 
@@ -52,6 +66,8 @@ From a clone, without installing the binary:
 ```bash
 go run ./backend mcp
 ```
+
+Tools the server exposes: `organizer_list_items`, `organizer_get_item`, `organizer_get_unclassified`, `organizer_add_taxonomy_rule`, `organizer_get_stats`, `organizer_refresh`. Full argument lists are in the skill file.
 
 ## Production build
 
