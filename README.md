@@ -6,6 +6,21 @@ It scans your configs, groups skills into packs (parent + children), and shows h
 
 Organizer is also **agent-facing**: it ships its own skill (`organizer-catalog`) so an AI can configure and operate the catalog, and its own MCP server so the agent can list, inspect, classify, and refresh items without opening the UI.
 
+## Why this exists
+
+Skills and MCP servers do not live in one place. Each client has its own folders and config files (`~/.agents/skills`, `~/.grok`, `~/.cursor`, Hermes, OpenCode, …). After a few installs you have hundreds of tools and no map.
+
+Packs make that worse: `npx skills add owner/repo` flattens a whole GitHub repo into sibling folders. A pack like bug-bounty is one parent plus dozens of `hunt-*` children, but on disk they look unrelated. An agent then has to guess which skill to load from a giant list of descriptions.
+
+Organizer is useful because it:
+
+- **Inventories** every skill and MCP it can find on the machine, including how to invoke it
+- **Groups packs** (repo, nested folder, or alias) so a parent shows its children
+- **Gives agents a real API** (MCP + skill) instead of hoping they pick the right `SKILL.md` from memory
+- **Keeps secrets out of the catalog** (env keys only)
+
+If you only use one client and a handful of skills, you may not need it. It pays off when the same machine has several agents and large skill packs.
+
 ## Quick path
 
 1. Install [Go 1.27+](https://go.dev/dl/) and [Bun](https://bun.sh) (Node 22.12+ also works for the frontend).
@@ -13,7 +28,7 @@ Organizer is also **agent-facing**: it ships its own skill (`organizer-catalog`)
 
    ```bash
    git clone https://github.com/josegil1909/skill-organizer.git
-   cd organizer
+   cd skill-organizer
    make install
    ```
 
